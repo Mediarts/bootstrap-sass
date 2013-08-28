@@ -88,6 +88,8 @@
   }
 
   Modal.prototype.hide = function (e) {
+    $(".videoModal .modal-body").html ""
+    
     if (e) e.preventDefault()
 
     e = $.Event('hide.bs.modal')
